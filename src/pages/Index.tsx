@@ -43,8 +43,11 @@ const Index = () => {
               Безопасность
             </Badge>
           </div>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Современный взгляд на программное обеспечение, его структуру и применение в реальных условиях
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            Современный взгляд на программное обеспечение, его структуру и применение в реальных условиях. 
+            Программное обеспечение (ПО) — это совокупность программ, процедур и правил, необходимых для функционирования компьютерной системы. 
+            Без ПО компьютер представляет собой набор электронных компонентов, неспособных выполнять полезную работу. 
+            ПО делится на системное (обеспечивающее работу аппаратуры), прикладное (для решения задач пользователя) и инструментальное (для разработки программ).
           </p>
         </div>
       ),
@@ -66,7 +69,9 @@ const Index = () => {
           <Card className="p-6 bg-card/50 backdrop-blur border-primary/30 hover:border-primary transition-all hover:scale-105 hover:shadow-xl hover:shadow-primary/20">
             <Icon name="Layers" className="mb-4 text-primary" size={48} />
             <h3 className="text-2xl font-bold mb-3">Многоуровневая структура</h3>
-            <p className="text-muted-foreground mb-4">Программное обеспечение организовано в виде иерархии слоев, каждый из которых выполняет свои функции</p>
+            <p className="text-muted-foreground mb-4">Программное обеспечение организовано в виде иерархии слоев, каждый из которых выполняет свои функции. 
+            Нижний уровень — аппаратное обеспечение и микрокод, средний — операционная система и драйверы, верхний — прикладные программы. 
+            Такая архитектура обеспечивает абстракцию: каждый уровень предоставляет сервисы вышестоящему, скрывая детали реализации.</p>
             <a 
               href="https://ru.wikipedia.org/wiki/Многоуровневая_архитектура" 
               target="_blank" 
@@ -79,7 +84,9 @@ const Index = () => {
           <Card className="p-6 bg-card/50 backdrop-blur border-secondary/30 hover:border-secondary transition-all hover:scale-105 hover:shadow-xl hover:shadow-secondary/20">
             <Icon name="GitBranch" className="mb-4 text-secondary" size={48} />
             <h3 className="text-2xl font-bold mb-3">Модульность</h3>
-            <p className="text-muted-foreground mb-4">Разделение на независимые модули упрощает разработку, тестирование и поддержку</p>
+            <p className="text-muted-foreground mb-4">Разделение на независимые модули упрощает разработку, тестирование и поддержку. 
+            Модульный подход позволяет параллельную разработку, повторное использование кода и изоляцию ошибок. 
+            Каждый модуль имеет четко определенный интерфейс и выполняет конкретную задачу, что делает систему более гибкой и масштабируемой.</p>
             <a 
               href="https://ru.wikipedia.org/wiki/Модульное_программирование" 
               target="_blank" 
@@ -92,7 +99,9 @@ const Index = () => {
           <Card className="p-6 bg-card/50 backdrop-blur border-accent/30 hover:border-accent transition-all hover:scale-105 hover:shadow-xl hover:shadow-accent/20">
             <Icon name="Workflow" className="mb-4 text-accent" size={48} />
             <h3 className="text-2xl font-bold mb-3">Взаимодействие</h3>
-            <p className="text-muted-foreground mb-4">Компоненты ПО взаимодействуют через API, протоколы и интерфейсы</p>
+            <p className="text-muted-foreground mb-4">Компоненты ПО взаимодействуют через API (Application Programming Interface), сетевые протоколы и стандартизированные интерфейсы. 
+            API определяет методы, форматы данных и правила взаимодействия между программными компонентами. 
+            Современные системы используют RESTful API, GraphQL, gRPC для обмена данными между сервисами.</p>
             <a 
               href="https://ru.wikipedia.org/wiki/API" 
               target="_blank" 
@@ -105,7 +114,9 @@ const Index = () => {
           <Card className="p-6 bg-card/50 backdrop-blur border-primary/30 hover:border-primary transition-all hover:scale-105 hover:shadow-xl hover:shadow-primary/20">
             <Icon name="Zap" className="mb-4 text-primary" size={48} />
             <h3 className="text-2xl font-bold mb-3">Производительность</h3>
-            <p className="text-muted-foreground mb-4">Оптимизация кода и архитектуры для эффективного использования ресурсов</p>
+            <p className="text-muted-foreground mb-4">Оптимизация кода и архитектуры для эффективного использования ресурсов процессора, памяти и диска. 
+            Включает выбор эффективных алгоритмов, структур данных, кэширование, многопоточность и асинхронное программирование. 
+            Профилирование помогает выявить узкие места, а рефакторинг улучшает производительность без изменения функциональности.</p>
             <a 
               href="https://ru.wikipedia.org/wiki/Оптимизация_программного_обеспечения" 
               target="_blank" 
@@ -137,7 +148,7 @@ const Index = () => {
               <Icon name="Monitor" className="text-primary flex-shrink-0" size={56} />
               <div>
                 <h3 className="text-3xl font-bold mb-2">Операционные Системы</h3>
-                <p className="text-lg text-muted-foreground mb-4">Управляют аппаратным обеспечением и предоставляют интерфейс для других программ</p>
+                <p className="text-lg text-muted-foreground mb-4">ОС — комплекс программ, который управляет аппаратными ресурсами (процессор, память, диски), обеспечивает выполнение программ и предоставляет интерфейс пользователя (GUI или CLI). Основные функции: управление процессами, файловой системой, вводом-выводом и безопасностью.</p>
                 <div className="flex flex-wrap gap-3">
                   <a href="https://www.microsoft.com/windows" target="_blank" rel="noopener noreferrer">
                     <Badge className="px-4 py-2 bg-blue-600 hover:bg-blue-700 transition-all hover:scale-110 cursor-pointer">
@@ -165,12 +176,12 @@ const Index = () => {
             <Card className="p-5 bg-card/50 backdrop-blur hover:bg-card/70 transition-all hover:scale-105 hover:shadow-lg">
               <Icon name="HardDrive" className="mb-3 text-secondary" size={40} />
               <h4 className="text-xl font-bold mb-2">Драйверы устройств</h4>
-              <p className="text-muted-foreground text-sm">Обеспечивают взаимодействие ОС с периферийными устройствами</p>
+              <p className="text-muted-foreground text-sm">Специализированные программы, обеспечивающие взаимодействие ОС с периферийными устройствами: видеокартами, принтерами, сканерами, сетевыми адаптерами. Без драйверов оборудование не будет работать корректно.</p>
             </Card>
             <Card className="p-5 bg-card/50 backdrop-blur hover:bg-card/70 transition-all hover:scale-105 hover:shadow-lg">
               <Icon name="Settings" className="mb-3 text-accent" size={40} />
               <h4 className="text-xl font-bold mb-2">Системные утилиты</h4>
-              <p className="text-muted-foreground text-sm">Инструменты для настройки и обслуживания системы</p>
+              <p className="text-muted-foreground text-sm">Вспомогательные программы для настройки, оптимизации и обслуживания системы: диспетчер задач, реестр, монитор ресурсов, средства резервного копирования.</p>
             </Card>
           </div>
         </div>
@@ -185,7 +196,7 @@ const Index = () => {
           <Card className="p-5 bg-gradient-to-br from-blue-500/20 to-blue-700/20 border-blue-500/50 hover:border-blue-400 transition-all hover:scale-105 hover:shadow-xl hover:shadow-blue-500/30">
             <Icon name="FileText" className="mb-3 text-blue-400" size={40} />
             <h3 className="text-xl font-bold mb-2">Офисные приложения</h3>
-            <p className="text-sm text-muted-foreground mb-3">Текстовые редакторы, электронные таблицы, презентации</p>
+            <p className="text-sm text-muted-foreground mb-3">Программы для создания документов, таблиц, презентаций. Word, Excel, PowerPoint используются в бизнесе, образовании, личных целях. Поддерживают совместную работу и облачную синхронизацию.</p>
             <div className="space-y-2">
               <a href="https://www.microsoft.com/microsoft-365" target="_blank" rel="noopener noreferrer" className="block">
                 <Badge className="w-full justify-center hover:bg-blue-600 transition-all cursor-pointer">Microsoft 365</Badge>
@@ -198,7 +209,7 @@ const Index = () => {
           <Card className="p-5 bg-gradient-to-br from-purple-500/20 to-purple-700/20 border-purple-500/50 hover:border-purple-400 transition-all hover:scale-105 hover:shadow-xl hover:shadow-purple-500/30">
             <Icon name="Palette" className="mb-3 text-purple-400" size={40} />
             <h3 className="text-xl font-bold mb-2">Графические редакторы</h3>
-            <p className="text-sm text-muted-foreground mb-3">Создание и обработка изображений, видео</p>
+            <p className="text-sm text-muted-foreground mb-3">Инструменты для создания и обработки изображений, видео, 3D-моделей. Photoshop — стандарт растровой графики, Figma — для UI/UX дизайна, Premiere Pro — монтаж видео.</p>
             <div className="space-y-2">
               <a href="https://www.adobe.com/products/photoshop.html" target="_blank" rel="noopener noreferrer" className="block">
                 <Badge className="w-full justify-center hover:bg-purple-600 transition-all cursor-pointer">Adobe Photoshop</Badge>
@@ -211,7 +222,7 @@ const Index = () => {
           <Card className="p-5 bg-gradient-to-br from-green-500/20 to-green-700/20 border-green-500/50 hover:border-green-400 transition-all hover:scale-105 hover:shadow-xl hover:shadow-green-500/30">
             <Icon name="Globe" className="mb-3 text-green-400" size={40} />
             <h3 className="text-xl font-bold mb-2">Веб-браузеры</h3>
-            <p className="text-sm text-muted-foreground mb-3">Доступ к интернету и веб-приложениям</p>
+            <p className="text-sm text-muted-foreground mb-3">Программы для просмотра веб-страниц и работы с онлайн-приложениями. Поддерживают HTML5, CSS3, JavaScript. Chrome занимает 65% рынка, Firefox — открытый исходный код.</p>
             <div className="space-y-2">
               <a href="https://www.google.com/chrome" target="_blank" rel="noopener noreferrer" className="block">
                 <Badge className="w-full justify-center hover:bg-green-600 transition-all cursor-pointer">Google Chrome</Badge>
@@ -224,7 +235,7 @@ const Index = () => {
           <Card className="p-5 bg-gradient-to-br from-orange-500/20 to-orange-700/20 border-orange-500/50 hover:border-orange-400 transition-all hover:scale-105 hover:shadow-xl hover:shadow-orange-500/30">
             <Icon name="MessageSquare" className="mb-3 text-orange-400" size={40} />
             <h3 className="text-xl font-bold mb-2">Мессенджеры</h3>
-            <p className="text-sm text-muted-foreground mb-3">Коммуникация и обмен сообщениями</p>
+            <p className="text-sm text-muted-foreground mb-3">Приложения для обмена текстовыми, голосовыми, видеосообщениями. WhatsApp — 2+ млрд пользователей, Telegram — защищенные чаты и каналы, Slack — для бизнеса.</p>
             <div className="space-y-2">
               <a href="https://www.whatsapp.com" target="_blank" rel="noopener noreferrer" className="block">
                 <Badge className="w-full justify-center hover:bg-orange-600 transition-all cursor-pointer">WhatsApp</Badge>
@@ -237,7 +248,7 @@ const Index = () => {
           <Card className="p-5 bg-gradient-to-br from-red-500/20 to-red-700/20 border-red-500/50 hover:border-red-400 transition-all hover:scale-105 hover:shadow-xl hover:shadow-red-500/30">
             <Icon name="Music" className="mb-3 text-red-400" size={40} />
             <h3 className="text-xl font-bold mb-2">Медиа-проигрыватели</h3>
-            <p className="text-sm text-muted-foreground mb-3">Воспроизведение аудио и видео</p>
+            <p className="text-sm text-muted-foreground mb-3">Программы для воспроизведения аудио, видео, стриминга музыки. Spotify — 500+ млн пользователей, VLC — универсальный плеер с поддержкой всех форматов.</p>
             <div className="space-y-2">
               <a href="https://www.spotify.com" target="_blank" rel="noopener noreferrer" className="block">
                 <Badge className="w-full justify-center hover:bg-red-600 transition-all cursor-pointer">Spotify</Badge>
@@ -250,7 +261,7 @@ const Index = () => {
           <Card className="p-5 bg-gradient-to-br from-cyan-500/20 to-cyan-700/20 border-cyan-500/50 hover:border-cyan-400 transition-all hover:scale-105 hover:shadow-xl hover:shadow-cyan-500/30">
             <Icon name="Code" className="mb-3 text-cyan-400" size={40} />
             <h3 className="text-xl font-bold mb-2">Среды разработки</h3>
-            <p className="text-sm text-muted-foreground mb-3">Инструменты для программирования</p>
+            <p className="text-sm text-muted-foreground mb-3">Интегрированные среды (IDE) для написания кода, отладки, тестирования. VS Code — самый популярный редактор, JetBrains — профессиональные IDE.</p>
             <div className="space-y-2">
               <a href="https://code.visualstudio.com" target="_blank" rel="noopener noreferrer" className="block">
                 <Badge className="w-full justify-center hover:bg-cyan-600 transition-all cursor-pointer">VS Code</Badge>
@@ -458,15 +469,17 @@ const Index = () => {
             />
           </div>
           <div className="text-center mb-6">
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Современные облачные платформы предоставляют доступ к вычислительным ресурсам, хранилищам данных и приложениям через интернет
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+              Облачные вычисления (Cloud Computing) — модель предоставления вычислительных ресурсов по запросу через интернет. 
+              Рынок облаков вырос до $500+ млрд в 2023 году. Модели: IaaS (инфраструктура), PaaS (платформа), SaaS (приложения). 
+              Преимущества: масштабируемость, оплата по факту использования, глобальный доступ, автоматические обновления.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-5">
             <Card className="p-6 bg-gradient-to-br from-blue-500/20 to-blue-700/20 border-blue-500/50 hover:scale-105 transition-all hover:shadow-2xl hover:shadow-blue-500/30">
               <Icon name="Database" className="mb-4 text-blue-400" size={48} />
               <h3 className="text-xl font-bold mb-3">Облачные хранилища</h3>
-              <p className="text-sm text-muted-foreground mb-4">Хранение и синхронизация файлов</p>
+              <p className="text-sm text-muted-foreground mb-4">Сервисы для хранения, синхронизации и совместной работы с файлами. Автоматическое резервное копирование, версионность, мультиустройственный доступ.</p>
               <div className="space-y-2">
                 <a href="https://www.google.com/drive" target="_blank" rel="noopener noreferrer" className="block">
                   <Badge className="w-full justify-center hover:bg-blue-600 transition-all cursor-pointer">Google Drive</Badge>
@@ -482,7 +495,7 @@ const Index = () => {
             <Card className="p-6 bg-gradient-to-br from-purple-500/20 to-purple-700/20 border-purple-500/50 hover:scale-105 transition-all hover:shadow-2xl hover:shadow-purple-500/30">
               <Icon name="Server" className="mb-4 text-purple-400" size={48} />
               <h3 className="text-xl font-bold mb-3">Облачные платформы</h3>
-              <p className="text-sm text-muted-foreground mb-4">Инфраструктура и вычисления</p>
+              <p className="text-sm text-muted-foreground mb-4">Инфраструктура для развертывания приложений: виртуальные машины, контейнеры, serverless-функции, базы данных, сетевые сервисы.</p>
               <div className="space-y-2">
                 <a href="https://aws.amazon.com" target="_blank" rel="noopener noreferrer" className="block">
                   <Badge className="w-full justify-center hover:bg-purple-600 transition-all cursor-pointer">Amazon AWS</Badge>
@@ -498,7 +511,7 @@ const Index = () => {
             <Card className="p-6 bg-gradient-to-br from-green-500/20 to-green-700/20 border-green-500/50 hover:scale-105 transition-all hover:shadow-2xl hover:shadow-green-500/30">
               <Icon name="AppWindow" className="mb-4 text-green-400" size={48} />
               <h3 className="text-xl font-bold mb-3">SaaS-приложения</h3>
-              <p className="text-sm text-muted-foreground mb-4">Программы как сервис</p>
+              <p className="text-sm text-muted-foreground mb-4">Программное обеспечение как сервис: не нужно устанавливать, работа через браузер. Подписная модель, автообновления, мультитенантность.</p>
               <div className="space-y-2">
                 <a href="https://www.office.com" target="_blank" rel="noopener noreferrer" className="block">
                   <Badge className="w-full justify-center hover:bg-green-600 transition-all cursor-pointer">Microsoft 365</Badge>
@@ -548,7 +561,7 @@ const Index = () => {
           <Card className="p-6 bg-gradient-to-br from-pink-500/20 to-purple-700/20 border-pink-500/50 hover:scale-105 transition-all hover:shadow-2xl hover:shadow-pink-500/30">
             <Icon name="Brain" className="mb-4 text-pink-400" size={52} />
             <h3 className="text-2xl font-bold mb-3">Искусственный Интеллект</h3>
-            <p className="text-muted-foreground mb-4">ИИ интегрируется в различные приложения для автоматизации и улучшения функционала</p>
+            <p className="text-muted-foreground mb-4">ИИ трансформирует индустрию ПО: обработка естественного языка (ChatGPT), генерация изображений (Midjourney, DALL-E), автоматическое программирование (GitHub Copilot). Машинное обучение и нейросети применяются в медицине, финансах, автономных системах.</p>
             <div className="space-y-2">
               <a href="https://openai.com" target="_blank" rel="noopener noreferrer" className="block">
                 <Badge className="hover:bg-pink-600 transition-all cursor-pointer">
@@ -567,7 +580,7 @@ const Index = () => {
           <Card className="p-6 bg-gradient-to-br from-cyan-500/20 to-blue-700/20 border-cyan-500/50 hover:scale-105 transition-all hover:shadow-2xl hover:shadow-cyan-500/30">
             <Icon name="Box" className="mb-4 text-cyan-400" size={52} />
             <h3 className="text-2xl font-bold mb-3">Контейнеризация</h3>
-            <p className="text-muted-foreground mb-4">Изоляция и упаковка приложений для удобного развертывания</p>
+            <p className="text-muted-foreground mb-4">Технология изоляции приложений с зависимостями в легковесные контейнеры. Docker обеспечивает переносимость между окружениями, Kubernetes автоматизирует развертывание, масштабирование и управление контейнерами на промышленном уровне.</p>
             <div className="space-y-2">
               <a href="https://www.docker.com" target="_blank" rel="noopener noreferrer" className="block">
                 <Badge className="hover:bg-cyan-600 transition-all cursor-pointer">
@@ -586,7 +599,7 @@ const Index = () => {
           <Card className="p-6 bg-gradient-to-br from-green-500/20 to-teal-700/20 border-green-500/50 hover:scale-105 transition-all hover:shadow-2xl hover:shadow-green-500/30">
             <Icon name="Blocks" className="mb-4 text-green-400" size={52} />
             <h3 className="text-2xl font-bold mb-3">Low-Code/No-Code</h3>
-            <p className="text-muted-foreground mb-4">Создание приложений без глубоких знаний программирования</p>
+            <p className="text-muted-foreground mb-4">Платформы для создания приложений без глубоких знаний кодинга через визуальные интерфейсы. Демократизируют разработку, позволяя бизнес-пользователям создавать простые приложения. Ускоряют прототипирование и MVP-разработку.</p>
             <div className="space-y-2">
               <a href="https://www.notion.so" target="_blank" rel="noopener noreferrer" className="block">
                 <Badge className="hover:bg-green-600 transition-all cursor-pointer">Notion</Badge>
@@ -599,7 +612,7 @@ const Index = () => {
           <Card className="p-6 bg-gradient-to-br from-orange-500/20 to-red-700/20 border-orange-500/50 hover:scale-105 transition-all hover:shadow-2xl hover:shadow-orange-500/30">
             <Icon name="Smartphone" className="mb-4 text-orange-400" size={52} />
             <h3 className="text-2xl font-bold mb-3">Progressive Web Apps</h3>
-            <p className="text-muted-foreground mb-4">Веб-приложения с возможностями нативных мобильных приложений</p>
+            <p className="text-muted-foreground mb-4">Веб-приложения, работающие офлайн, с push-уведомлениями и установкой на главный экран без App Store. Объединяют преимущества веба (кросс-платформенность) и нативных приложений (быстродействие, доступ к API).</p>
             <div className="space-y-2">
               <a href="https://web.dev/progressive-web-apps" target="_blank" rel="noopener noreferrer" className="text-orange-400 hover:text-orange-300 text-sm underline inline-flex items-center gap-1">
                 Узнать больше <Icon name="ExternalLink" size={14} />
@@ -618,25 +631,27 @@ const Index = () => {
           <Icon name="Rocket" className="mx-auto text-primary animate-pulse" size={80} />
           <div className="max-w-3xl mx-auto space-y-6">
             <h3 className="text-3xl font-bold">Программное обеспечение - основа цифрового мира</h3>
-            <p className="text-xl text-muted-foreground">
-              От операционных систем до облачных сервисов, ПО продолжает эволюционировать, 
-              делая наши устройства мощнее, а работу - эффективнее
+            <p className="text-xl text-muted-foreground leading-relaxed">
+              От операционных систем до облачных сервисов, ПО продолжает эволюционировать, делая наши устройства мощнее, а работу - эффективнее. 
+              Современная экономика полностью зависит от программного обеспечения: банковские системы, логистика, медицина, образование, развлечения. 
+              Глобальный рынок ПО достиг $650+ млрд в 2024 году и продолжает расти на 10-15% ежегодно. 
+              Будущее за ИИ-интеграцией, квантовыми вычислениями и edge-computing, которые откроют новые возможности для человечества.
             </p>
             <div className="grid md:grid-cols-3 gap-4 mt-8">
               <Card className="p-5 bg-primary/10 border-primary/30 hover:scale-105 transition-all">
                 <Icon name="TrendingUp" className="mx-auto mb-3 text-primary" size={40} />
                 <h4 className="font-bold text-lg mb-2">Постоянное развитие</h4>
-                <p className="text-sm text-muted-foreground">Новые технологии появляются каждый день</p>
+                <p className="text-sm text-muted-foreground">Новые технологии появляются каждый день. Индустрия не стоит на месте, постоянно развиваясь и адаптируясь</p>
               </Card>
               <Card className="p-5 bg-secondary/10 border-secondary/30 hover:scale-105 transition-all">
                 <Icon name="Users" className="mx-auto mb-3 text-secondary" size={40} />
                 <h4 className="font-bold text-lg mb-2">Сообщество</h4>
-                <p className="text-sm text-muted-foreground">Миллионы разработчиков создают ПО</p>
+                <p className="text-sm text-muted-foreground">Более 27 млн разработчиков по всему миру создают ПО и делятся опытом</p>
               </Card>
               <Card className="p-5 bg-accent/10 border-accent/30 hover:scale-105 transition-all">
                 <Icon name="Lightbulb" className="mx-auto mb-3 text-accent" size={40} />
                 <h4 className="font-bold text-lg mb-2">Инновации</h4>
-                <p className="text-sm text-muted-foreground">ИИ и автоматизация меняют индустрию</p>
+                <p className="text-sm text-muted-foreground">ИИ, автоматизация и квантовые вычисления меняют индустрию навсегда</p>
               </Card>
             </div>
             <div className="pt-8 space-y-4">
