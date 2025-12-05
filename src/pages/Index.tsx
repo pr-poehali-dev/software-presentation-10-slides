@@ -22,6 +22,13 @@ const Index = () => {
       subtitle: 'Полное руководство по архитектуре и типам ПО',
       content: (
         <div className="space-y-6 animate-fade-in">
+          <div className="flex justify-center mb-6">
+            <img 
+              src="https://cdn.poehali.dev/projects/a03b50e6-1fb7-47b6-ab22-052b4d7426f2/files/0a98937b-bec9-4b66-94a5-dc8454691184.jpg" 
+              alt="Software Architecture"
+              className="rounded-2xl shadow-2xl max-w-2xl w-full h-64 object-cover border-4 border-primary/30 hover:scale-105 transition-all"
+            />
+          </div>
           <div className="flex justify-center gap-4 flex-wrap">
             <Badge className="px-6 py-3 text-lg bg-primary/20 hover:bg-primary/30 transition-all hover:scale-110">
               <Icon name="Cpu" className="mr-2" size={20} />
@@ -47,7 +54,15 @@ const Index = () => {
       id: 2,
       title: 'Архитектура Программного Обеспечения',
       content: (
-        <div className="grid md:grid-cols-2 gap-6 animate-fade-in">
+        <div className="space-y-6 animate-fade-in">
+          <div className="flex justify-center mb-6">
+            <img 
+              src="https://cdn.poehali.dev/projects/a03b50e6-1fb7-47b6-ab22-052b4d7426f2/files/0a98937b-bec9-4b66-94a5-dc8454691184.jpg" 
+              alt="Software Architecture Layers"
+              className="rounded-2xl shadow-2xl max-w-3xl w-full h-56 object-cover border-4 border-primary/30 hover:scale-105 transition-all"
+            />
+          </div>
+        <div className="grid md:grid-cols-2 gap-6">
           <Card className="p-6 bg-card/50 backdrop-blur border-primary/30 hover:border-primary transition-all hover:scale-105 hover:shadow-xl hover:shadow-primary/20">
             <Icon name="Layers" className="mb-4 text-primary" size={48} />
             <h3 className="text-2xl font-bold mb-3">Многоуровневая структура</h3>
@@ -101,6 +116,7 @@ const Index = () => {
             </a>
           </Card>
         </div>
+        </div>
       ),
       gradient: 'from-primary to-secondary'
     },
@@ -109,6 +125,13 @@ const Index = () => {
       title: 'Системное Программное Обеспечение',
       content: (
         <div className="space-y-6 animate-fade-in">
+          <div className="flex justify-center mb-6">
+            <img 
+              src="https://cdn.poehali.dev/projects/a03b50e6-1fb7-47b6-ab22-052b4d7426f2/files/2a3ad49f-16ba-4143-8104-fa8cbc2aaa96.jpg" 
+              alt="Operating Systems"
+              className="rounded-2xl shadow-2xl max-w-3xl w-full h-56 object-cover border-4 border-secondary/30 hover:scale-105 transition-all"
+            />
+          </div>
           <Card className="p-6 bg-gradient-to-r from-primary/20 to-secondary/20 border-primary/50 hover:shadow-2xl hover:shadow-primary/30 transition-all hover:scale-[1.02]">
             <div className="flex items-start gap-4">
               <Icon name="Monitor" className="text-primary flex-shrink-0" size={56} />
@@ -427,8 +450,14 @@ const Index = () => {
       title: 'Облачные Технологии и Сервисы',
       content: (
         <div className="space-y-6 animate-fade-in">
+          <div className="flex justify-center mb-6">
+            <img 
+              src="https://cdn.poehali.dev/projects/a03b50e6-1fb7-47b6-ab22-052b4d7426f2/files/6191f3e2-f7ad-45fe-a56f-c26589a936c2.jpg" 
+              alt="Cloud Computing"
+              className="rounded-2xl shadow-2xl max-w-3xl w-full h-64 object-cover border-4 border-primary/30 hover:scale-105 transition-all"
+            />
+          </div>
           <div className="text-center mb-6">
-            <Icon name="Cloud" className="mx-auto mb-4 text-primary animate-pulse" size={64} />
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Современные облачные платформы предоставляют доступ к вычислительным ресурсам, хранилищам данных и приложениям через интернет
             </p>
